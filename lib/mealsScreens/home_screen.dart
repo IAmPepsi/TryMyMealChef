@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:try_my_meal_chef/mealsScreens/upload_meals_screen.dart';
 
 import '../widgets/my_drawer.dart';
 
@@ -41,6 +42,18 @@ class _HomeScreenState extends State<HomeScreen>
           ),
         ),
         centerTitle: true,
+        actions: [
+          IconButton(
+            onPressed: ()
+            {
+              Navigator.push(context, MaterialPageRoute(builder: (c)=> UploadMealssScreen()));
+            },
+            icon: const Icon(
+              Icons.add,
+              color: Colors.white,
+            ),
+          ),
+        ],
       ),
     );
   }
