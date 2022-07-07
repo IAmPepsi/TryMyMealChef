@@ -10,16 +10,16 @@ import 'package:try_my_meal_chef/widgets/progress_bar.dart';
 import 'package:firebase_storage/firebase_storage.dart' as fStorage;
 
 
-class UploadMealssScreen extends StatefulWidget
+class UploadMealsScreen extends StatefulWidget
 {
   @override
-  State<UploadMealssScreen> createState() => _UploadMealsScreenState();
+  State<UploadMealsScreen> createState() => _UploadMealsScreenState();
 }
 
 
 
 
-class _UploadMealsScreenState extends State<UploadMealssScreen>
+class _UploadMealsScreenState extends State<UploadMealsScreen>
 {
   XFile? imgXFile;
   final ImagePicker imagePicker = ImagePicker();
