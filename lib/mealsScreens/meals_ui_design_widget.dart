@@ -1,7 +1,11 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
+import 'package:try_my_meal_chef/itemsScreens/items_screen.dart';
 import 'package:try_my_meal_chef/models/meals.dart';
+import 'package:try_my_meal_chef/splashScreen/my_splash_screen.dart';
 
-import '../itemsScreens/items_screen.dart';
+import '../global/global.dart';
 
 class MealsUiDesignWidget extends StatefulWidget
 {
@@ -16,8 +20,23 @@ class MealsUiDesignWidget extends StatefulWidget
 
 
 
+
+
 class _MealsUiDesignWidgetState extends State<MealsUiDesignWidget>
 {
+  deleteMeal(String mealUniqueID)
+  {
+    FirebaseFirestore.instance
+        .collection("chefs")
+        .doc(sharedPreferences!.getString("uid"))
+        .collection("meals")
+        .doc(mealUniqueID)
+        .delete();
+
+    Fluttertoast.showToast(msg: "Meal Deleted.");
+    Navigator.push(context, MaterialPageRoute(builder: (c)=> MySplashScreen()));
+  }
+
   @override
   Widget build(BuildContext context)
   {
@@ -62,7 +81,7 @@ class _MealsUiDesignWidgetState extends State<MealsUiDesignWidget>
                     IconButton(
                       onPressed: ()
                       {
-
+                        deleteMeal(widget.model!.mealID.toString());
                       },
                       icon: const Icon(
                         Icons.delete_sweep,

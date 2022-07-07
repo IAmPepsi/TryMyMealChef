@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:try_my_meal_chef/itemsScreens/items_screen.dart';
 import 'package:try_my_meal_chef/models/items.dart';
+import 'items_details_screen.dart';
 
 class ItemsUiDesignWidget extends StatefulWidget
 {
@@ -24,9 +25,9 @@ class _ItemsUiDesignWidgetState extends State<ItemsUiDesignWidget>
     return GestureDetector(
       onTap: ()
       {
-        /*Navigator.push(context, MaterialPageRoute(builder: (c)=> ItemsScreen(
+        Navigator.push(context, MaterialPageRoute(builder: (c)=> ItemsDetailsScreen(
           model: widget.model,
-        )));*/
+        )));
       },
       child: Card(
         elevation: 10,
