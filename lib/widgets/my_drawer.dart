@@ -1,7 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:try_my_meal_chef/mealsScreens/home_screen.dart';
+import 'package:try_my_meal_chef/ordersScreens/orders_screen.dart';
 
 import '../global/global.dart';
+import '../shiftedParcelsScreen/shifted_parcels_screen.dart';
 import '../splashScreen/my_splash_screen.dart';
 
 
@@ -78,7 +81,7 @@ class _MyDrawerState extends State<MyDrawer>
                   ),
                   onTap: ()
                   {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=> HomeScreen()));
                   },
                 ),
                 const Divider(
@@ -91,12 +94,12 @@ class _MyDrawerState extends State<MyDrawer>
                 ListTile(
                   leading: const Icon(Icons.reorder, color: Colors.grey,),
                   title: const Text(
-                    "My Orders",
+                    "New Orders",
                     style: TextStyle(color: Colors.grey),
                   ),
                   onTap: ()
                   {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=> OrdersScreen()));
                   },
                 ),
                 const Divider(
@@ -109,12 +112,12 @@ class _MyDrawerState extends State<MyDrawer>
                 ListTile(
                   leading: const Icon(Icons.picture_in_picture_alt_rounded, color: Colors.grey,),
                   title: const Text(
-                    "Not Yet Received Orders",
+                    "Shifted Parcels",
                     style: TextStyle(color: Colors.grey),
                   ),
                   onTap: ()
                   {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=> ShiftedParcelsScreen()));
                   },
                 ),
                 const Divider(

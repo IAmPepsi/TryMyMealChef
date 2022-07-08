@@ -115,7 +115,7 @@ class _LoginTabPageState extends State<LoginTabPage>
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Image.asset(
-              "images/seller.png",
+              "images/chef.png",
               height: MediaQuery.of(context).size.height * 0.40,
             ),
           ),

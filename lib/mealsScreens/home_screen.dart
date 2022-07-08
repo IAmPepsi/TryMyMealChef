@@ -19,6 +19,26 @@ class HomeScreen extends StatefulWidget
 
 class _HomeScreenState extends State<HomeScreen>
 {
+  getChefEarningsFromDatabase()
+  {
+    FirebaseFirestore.instance
+        .collection("chefs")
+        .doc(sharedPreferences!.getString("uid"))
+        .get()
+        .then((dataSnapShot)
+    {
+      previousEarning = dataSnapShot.data()!["earnings"].toString();
+    });
+  }
+
+  @override
+  void initState()
+  {
+    super.initState();
+
+    getChefEarningsFromDatabase();
+  }
+
   @override
   Widget build(BuildContext context)
   {
