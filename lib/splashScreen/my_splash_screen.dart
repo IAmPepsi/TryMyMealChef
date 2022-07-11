@@ -5,7 +5,6 @@ import '../authScreens/auth_screen.dart';
 import '../mealsScreens/home_screen.dart';
 
 
-
 class MySplashScreen extends StatefulWidget
 {
   @override
@@ -49,8 +48,8 @@ class _MySplashScreenState extends State<MySplashScreen>
             gradient: LinearGradient(
               colors:
               [
-                Colors.pinkAccent,
-                Colors.purpleAccent,
+                Colors.cyanAccent,
+                Colors.lightBlue,
               ],
               begin: FractionalOffset(0.0, 0.0),
               end: FractionalOffset(1.0, 0.0),
@@ -74,7 +73,7 @@ class _MySplashScreenState extends State<MySplashScreen>
               const SizedBox(height: 10,),
 
               const Text(
-                "iShop Chef App",
+                "iShop Chefs App",
                 style: TextStyle(
                   fontSize: 30,
                   letterSpacing: 3,

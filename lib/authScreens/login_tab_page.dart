@@ -64,11 +64,11 @@ class _LoginTabPageState extends State<LoginTabPage>
 
     if(currentUser != null)
     {
-      checkIfChefsRecordExists(currentUser!);
+      checkIfChefRecordExists(currentUser!);
     }
   }
 
-  checkIfChefsRecordExists(User currentUser) async
+  checkIfChefRecordExists(User currentUser) async
   {
     await FirebaseFirestore.instance
         .collection("chefs")
@@ -86,7 +86,7 @@ class _LoginTabPageState extends State<LoginTabPage>
           await sharedPreferences!.setString("name", record.data()!["name"]);
           await sharedPreferences!.setString("photoUrl", record.data()!["photoUrl"]);
 
-          //send chefs to home screen
+          //send chef to home screen
           Navigator.push(context, MaterialPageRoute(builder: (c)=> MySplashScreen()));
         }
         else //status is not approved
@@ -153,7 +153,7 @@ class _LoginTabPageState extends State<LoginTabPage>
 
           ElevatedButton(
               style: ElevatedButton.styleFrom(
-                primary: Colors.pinkAccent,
+                primary: Colors.cyanAccent,
                 padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 12),
               ),
               onPressed: ()

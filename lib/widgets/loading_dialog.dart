@@ -22,7 +22,7 @@ class LoadingDialogWidget extends StatelessWidget
             alignment: Alignment.center,
             padding: const EdgeInsets.only(top: 14),
             child: const CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation(Colors.pinkAccent),
+              valueColor: AlwaysStoppedAnimation(Colors.cyanAccent),
             ),
           ),
 

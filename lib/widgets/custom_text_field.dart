@@ -44,7 +44,7 @@ class _CustomTextFieldState extends State<CustomTextField>
           border: InputBorder.none,
           prefixIcon: Icon(
             widget.iconData,
-            color: Colors.purpleAccent,
+            color: Colors.lightBlue,
           ),
           focusColor: Theme.of(context).primaryColor,
           hintText: widget.hintText,

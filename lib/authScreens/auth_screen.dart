@@ -3,6 +3,7 @@ import 'package:try_my_meal_chef/authScreens/registration_tab_page.dart';
 
 import 'login_tab_page.dart';
 
+
 class AuthScreen extends StatefulWidget
 {
   @override
@@ -25,8 +26,8 @@ class _AuthScreenState extends State<AuthScreen>
                 gradient: LinearGradient(
                   colors:
                   [
-                    Colors.pinkAccent,
-                    Colors.purpleAccent,
+                    Colors.cyanAccent,
+                    Colors.lightBlue,
                   ],
                   begin: FractionalOffset(0.0, 0.0),
                   end: FractionalOffset(1.0, 0.0),
@@ -70,8 +71,8 @@ class _AuthScreenState extends State<AuthScreen>
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.cyanAccent,
+                  Colors.lightBlue,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),

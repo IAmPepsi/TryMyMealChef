@@ -132,8 +132,8 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.cyanAccent,
+                  Colors.lightBlue,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),
@@ -177,7 +177,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
           ),
 
           const Divider(
-            color: Colors.pinkAccent,
+            color: Colors.cyanAccent,
             thickness: 1,
           ),
 
@@ -185,7 +185,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
           ListTile(
             leading: const Icon(
               Icons.perm_device_information,
-              color: Colors.deepPurple,
+              color: Colors.indigo,
             ),
             title: SizedBox(
               width: 250,
@@ -200,7 +200,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
             ),
           ),
           const Divider(
-            color: Colors.pinkAccent,
+            color: Colors.cyanAccent,
             thickness: 1,
           ),
 
@@ -208,7 +208,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
           ListTile(
             leading: const Icon(
               Icons.title,
-              color: Colors.deepPurple,
+              color: Colors.indigo,
             ),
             title: SizedBox(
               width: 250,
@@ -223,7 +223,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
             ),
           ),
           const Divider(
-            color: Colors.pinkAccent,
+            color: Colors.cyanAccent,
             thickness: 1,
           ),
 
@@ -247,8 +247,8 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.cyanAccent,
+                  Colors.lightBlue,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),
@@ -267,8 +267,8 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
             gradient: LinearGradient(
               colors:
               [
-                Colors.pinkAccent,
-                Colors.purpleAccent,
+                Colors.cyanAccent,
+                Colors.lightBlue,
               ],
               begin: FractionalOffset(0.0, 0.0),
               end: FractionalOffset(1.0, 0.0),
@@ -293,7 +293,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
                     obtainImageDialogBox();
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.deepPurple,
+                    primary: Colors.indigo,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
@@ -320,7 +320,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
             title: const Text(
               "Meal Image",
               style: TextStyle(
-                color: Colors.deepPurple,
+                color: Colors.indigo,
                 fontWeight: FontWeight.bold,
               ),
             ),

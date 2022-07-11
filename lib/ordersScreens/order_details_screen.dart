@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:try_my_meal_chef/ordersScreens/status_banner_widget.dart';
-import '../global/global.dart';
 import '../models/address.dart';
 import 'address_design_widget.dart';
 
@@ -96,7 +95,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
 
                   const Divider(
                     thickness: 1,
-                    color: Colors.pinkAccent,
+                    color: Colors.cyanAccent,
                   ),
 
                   orderStatus != "ended"
@@ -105,7 +104,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
 
                   const Divider(
                     thickness: 1,
-                    color: Colors.pinkAccent,
+                    color: Colors.cyanAccent,
                   ),
 
                   FutureBuilder(

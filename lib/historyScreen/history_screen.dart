@@ -5,15 +5,15 @@ import '../ordersScreens/order_card.dart';
 
 
 
-class ShiftedParcelsScreen extends StatefulWidget
+class HistoryScreen extends StatefulWidget
 {
   @override
-  State<ShiftedParcelsScreen> createState() => _ShiftedParcelsScreenState();
+  State<HistoryScreen> createState() => _HistoryScreenState();
 }
 
 
 
-class _ShiftedParcelsScreenState extends State<ShiftedParcelsScreen> {
+class _HistoryScreenState extends State<HistoryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +47,7 @@ class _ShiftedParcelsScreenState extends State<ShiftedParcelsScreen> {
       body: StreamBuilder(
         stream: FirebaseFirestore.instance
             .collection("orders")
-            .where("status", isEqualTo: "shifted")
+            .where("status", isEqualTo: "ended")
             .where("chefUID", isEqualTo: sharedPreferences!.getString("uid"))
             .orderBy("orderTime", descending: true)
             .snapshots(),

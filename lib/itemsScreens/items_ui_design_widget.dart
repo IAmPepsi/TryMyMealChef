@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:try_my_meal_chef/itemsScreens/items_screen.dart';
+import 'package:try_my_meal_chef/itemsScreens/items_details_screen.dart';
 import 'package:try_my_meal_chef/models/items.dart';
-import 'items_details_screen.dart';
 
 class ItemsUiDesignWidget extends StatefulWidget
 {
@@ -45,7 +44,7 @@ class _ItemsUiDesignWidgetState extends State<ItemsUiDesignWidget>
                 Text(
                   widget.model!.itemTitle.toString(),
                   style: const TextStyle(
-                    color: Colors.deepPurple,
+                    color: Colors.indigo,
                     fontWeight: FontWeight.bold,
                     fontSize: 20,
                     letterSpacing: 3,

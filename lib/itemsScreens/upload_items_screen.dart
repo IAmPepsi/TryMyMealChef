@@ -165,8 +165,8 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.cyanAccent,
+                  Colors.lightBlue,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),
@@ -210,7 +210,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
           ),
 
           const Divider(
-            color: Colors.pinkAccent,
+            color: Colors.cyanAccent,
             thickness: 1,
           ),
 
@@ -218,7 +218,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
           ListTile(
             leading: const Icon(
               Icons.perm_device_information,
-              color: Colors.deepPurple,
+              color: Colors.indigo,
             ),
             title: SizedBox(
               width: 250,
@@ -233,7 +233,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
             ),
           ),
           const Divider(
-            color: Colors.pinkAccent,
+            color: Colors.cyanAccent,
             thickness: 1,
           ),
 
@@ -241,7 +241,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
           ListTile(
             leading: const Icon(
               Icons.title,
-              color: Colors.deepPurple,
+              color: Colors.indigo,
             ),
             title: SizedBox(
               width: 250,
@@ -256,7 +256,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
             ),
           ),
           const Divider(
-            color: Colors.pinkAccent,
+            color: Colors.cyanAccent,
             thickness: 1,
           ),
 
@@ -264,7 +264,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
           ListTile(
             leading: const Icon(
               Icons.description,
-              color: Colors.deepPurple,
+              color: Colors.indigo,
             ),
             title: SizedBox(
               width: 250,
@@ -279,7 +279,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
             ),
           ),
           const Divider(
-            color: Colors.pinkAccent,
+            color: Colors.cyanAccent,
             thickness: 1,
           ),
 
@@ -287,7 +287,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
           ListTile(
             leading: const Icon(
               Icons.camera,
-              color: Colors.deepPurple,
+              color: Colors.indigo,
             ),
             title: SizedBox(
               width: 250,
@@ -302,7 +302,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
             ),
           ),
           const Divider(
-            color: Colors.pinkAccent,
+            color: Colors.cyanAccent,
             thickness: 1,
           ),
 
@@ -326,8 +326,8 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.cyanAccent,
+                  Colors.lightBlue,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),
@@ -346,8 +346,8 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
             gradient: LinearGradient(
               colors:
               [
-                Colors.pinkAccent,
-                Colors.purpleAccent,
+                Colors.cyanAccent,
+                Colors.lightBlue,
               ],
               begin: FractionalOffset(0.0, 0.0),
               end: FractionalOffset(1.0, 0.0),
@@ -372,7 +372,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
                     obtainImageDialogBox();
                   },
                   style: ElevatedButton.styleFrom(
-                    primary: Colors.deepPurple,
+                    primary: Colors.indigo,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
@@ -399,7 +399,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
             title: const Text(
               "Meal Image",
               style: TextStyle(
-                color: Colors.deepPurple,
+                color: Colors.indigo,
                 fontWeight: FontWeight.bold,
               ),
             ),

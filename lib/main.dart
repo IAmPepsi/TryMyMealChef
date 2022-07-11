@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:try_my_meal_chef/splashScreen/my_splash_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:try_my_meal_chef/splashScreen/my_splash_screen.dart';
-
 import 'global/global.dart';
 
 
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Chefs App',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
       home: MySplashScreen(),

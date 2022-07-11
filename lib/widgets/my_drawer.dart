@@ -1,10 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:try_my_meal_chef/mealsScreens/home_screen.dart';
+import 'package:try_my_meal_chef/earningsScreen/earnings_screen.dart';
+import 'package:try_my_meal_chef/historyScreen/history_screen.dart';
 import 'package:try_my_meal_chef/ordersScreens/orders_screen.dart';
+import 'package:try_my_meal_chef/shiftedParcelsScreen/shifted_parcels_screen.dart';
 
 import '../global/global.dart';
-import '../shiftedParcelsScreen/shifted_parcels_screen.dart';
 import '../splashScreen/my_splash_screen.dart';
 
 
@@ -90,6 +92,24 @@ class _MyDrawerState extends State<MyDrawer>
                   thickness: 2,
                 ),
 
+                //earnings
+                ListTile(
+                  leading: const Icon(Icons.monetization_on, color: Colors.grey,),
+                  title: const Text(
+                    "Earnings",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                  onTap: ()
+                  {
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=> EarningsScreen()));
+                  },
+                ),
+                const Divider(
+                  height: 10,
+                  color: Colors.grey,
+                  thickness: 2,
+                ),
+
                 //my orders
                 ListTile(
                   leading: const Icon(Icons.reorder, color: Colors.grey,),
@@ -108,7 +128,7 @@ class _MyDrawerState extends State<MyDrawer>
                   thickness: 2,
                 ),
 
-                //not yet received orders
+                //Shifted Parcels
                 ListTile(
                   leading: const Icon(Icons.picture_in_picture_alt_rounded, color: Colors.grey,),
                   title: const Text(
@@ -135,25 +155,7 @@ class _MyDrawerState extends State<MyDrawer>
                   ),
                   onTap: ()
                   {
-
-                  },
-                ),
-                const Divider(
-                  height: 10,
-                  color: Colors.grey,
-                  thickness: 2,
-                ),
-
-                //search
-                ListTile(
-                  leading: const Icon(Icons.search, color: Colors.grey,),
-                  title: const Text(
-                    "Search",
-                    style: TextStyle(color: Colors.grey),
-                  ),
-                  onTap: ()
-                  {
-
+                    Navigator.push(context, MaterialPageRoute(builder: (c)=> HistoryScreen()));
                   },
                 ),
                 const Divider(

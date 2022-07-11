@@ -52,8 +52,8 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.cyanAccent,
+                  Colors.lightBlue,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),
@@ -78,7 +78,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
           Icons.delete_sweep_outlined,
           color: Colors.white,
         ),
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: Colors.cyanAccent,
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -96,7 +96,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 20,
-                color: Colors.pinkAccent,
+                color: Colors.cyanAccent,
               ),
             ),
           ),
@@ -121,7 +121,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 30,
-                color: Colors.pink,
+                color: Colors.cyan,
               ),
             ),
           ),
@@ -131,7 +131,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
             child: Divider(
               height: 1,
               thickness: 2,
-              color: Colors.pinkAccent,
+              color: Colors.cyanAccent,
             ),
           ),
 

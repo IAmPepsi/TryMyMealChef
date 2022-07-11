@@ -23,8 +23,8 @@ class _OrdersScreenState extends State<OrdersScreen> {
               gradient: LinearGradient(
                 colors:
                 [
-                  Colors.pinkAccent,
-                  Colors.purpleAccent,
+                  Colors.cyanAccent,
+                  Colors.lightBlue,
                 ],
                 begin: FractionalOffset(0.0, 0.0),
                 end: FractionalOffset(1.0, 0.0),

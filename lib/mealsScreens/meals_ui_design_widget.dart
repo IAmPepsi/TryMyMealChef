@@ -72,7 +72,7 @@ class _MealsUiDesignWidgetState extends State<MealsUiDesignWidget>
                     Text(
                       widget.model!.mealTitle.toString(),
                       style: const TextStyle(
-                        color: Colors.deepPurple,
+                        color: Colors.indigo,
                         fontWeight: FontWeight.bold,
                         fontSize: 20,
                         letterSpacing: 3,
@@ -85,7 +85,7 @@ class _MealsUiDesignWidgetState extends State<MealsUiDesignWidget>
                       },
                       icon: const Icon(
                         Icons.delete_sweep,
-                        color: Colors.pinkAccent,
+                        color: Colors.cyanAccent,
                       ),
                     ),
                   ],

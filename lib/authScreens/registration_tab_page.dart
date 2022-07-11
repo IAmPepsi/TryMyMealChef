@@ -6,8 +6,8 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:firebase_storage/firebase_storage.dart' as fStorage;
-import '../global/global.dart';
 
+import '../global/global.dart';
 import '../splashScreen/my_splash_screen.dart';
 import '../widgets/custom_text_field.dart';
 import '../widgets/loading_dialog.dart';
@@ -147,7 +147,7 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
           "phone": phoneTextEditingController.text.trim(),
           "address": locationTextEditingController.text.trim(),
           "status": "approved",
-          "earning": 0.0,
+          "earnings": 0.0,
         });
 
     //save locally
@@ -250,7 +250,7 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
                   CustomTextField(
                     textEditingController: locationTextEditingController,
                     iconData: Icons.lock,
-                    hintText: "Location",
+                    hintText: "Address",
                     isObsecre: false,
                     enabled: true,
                   ),
@@ -263,7 +263,7 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
 
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.pinkAccent,
+                  primary: Colors.cyanAccent,
                   padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 12),
                 ),
                 onPressed: ()

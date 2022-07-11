@@ -9,7 +9,7 @@ linearProgressBar()
     alignment: Alignment.center,
     padding: const EdgeInsets.only(top: 14),
     child: const LinearProgressIndicator(
-      valueColor: AlwaysStoppedAnimation(Colors.pinkAccent),
+      valueColor: AlwaysStoppedAnimation(Colors.cyanAccent),
     ),
   );
 }

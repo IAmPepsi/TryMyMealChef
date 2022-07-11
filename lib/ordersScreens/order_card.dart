@@ -112,7 +112,7 @@ Widget placedOrdersItemsDesignWidget(Items items, BuildContext context, itemQuan
                     const Text(
                       "€ ",
                       style: TextStyle(
-                        color: Colors.purpleAccent,
+                        color: Colors.lightBlue,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
@@ -121,7 +121,7 @@ Widget placedOrdersItemsDesignWidget(Items items, BuildContext context, itemQuan
                     Text(
                       items.price.toString(),
                       style: const TextStyle(
-                        color: Colors.purpleAccent,
+                        color: Colors.lightBlue,
                         fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
