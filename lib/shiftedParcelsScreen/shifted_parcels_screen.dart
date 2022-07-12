@@ -35,7 +35,7 @@ class _ShiftedParcelsScreenState extends State<ShiftedParcelsScreen> {
           ),
         ),
         title: const Text(
-          "Shifted Parcels Screen",
+          "Gesendete Artikels",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -81,7 +81,7 @@ class _ShiftedParcelsScreenState extends State<ShiftedParcelsScreen> {
                     {
                       return const Center(
                         child: Text(
-                          "No data exists.",
+                          "Es sind keine Daten vorhanden.",
                         ),
                       );
                     }
@@ -94,7 +94,7 @@ class _ShiftedParcelsScreenState extends State<ShiftedParcelsScreen> {
           {
             return const Center(
               child: Text(
-                "No data exists.",
+                "Es sind keine Daten vorhanden.",
               ),
             );
           }

@@ -37,7 +37,7 @@ class _AuthScreenState extends State<AuthScreen>
             ),
           ),
           title: const Text(
-            "iShop",
+            "Try My Meal",
             style: TextStyle(
               fontSize: 30,
               letterSpacing: 3,
@@ -50,14 +50,14 @@ class _AuthScreenState extends State<AuthScreen>
             indicatorWeight: 6,
             tabs: [
               Tab(
-                text: "Login",
+                text: "Anmelden",
                 icon: Icon(
                   Icons.lock,
                   color: Colors.white,
                 ),
               ),
               Tab(
-                text: "Registration",
+                text: "Registrieren",
                 icon: Icon(
                   Icons.person,
                   color: Colors.white,

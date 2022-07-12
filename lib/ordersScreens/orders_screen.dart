@@ -34,7 +34,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
           ),
         ),
         title: const Text(
-          "New Orders",
+          "Neue Bestellungen",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -80,7 +80,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
                     {
                       return const Center(
                         child: Text(
-                          "No data exists.",
+                          "Es sind keine Daten vorhanden.",
                         ),
                       );
                     }
@@ -93,7 +93,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
           {
             return const Center(
               child: Text(
-                "No data exists.",
+                "Es sind keine Daten vorhanden.",
               ),
             );
           }

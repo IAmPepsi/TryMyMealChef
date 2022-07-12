@@ -33,7 +33,7 @@ class _MealsUiDesignWidgetState extends State<MealsUiDesignWidget>
         .doc(mealUniqueID)
         .delete();
 
-    Fluttertoast.showToast(msg: "Meal Deleted.");
+    Fluttertoast.showToast(msg: "Meal wurde gelöscht.");
     Navigator.push(context, MaterialPageRoute(builder: (c)=> MySplashScreen()));
   }
 

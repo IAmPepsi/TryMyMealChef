@@ -60,7 +60,7 @@ class _EarningsScreenState extends State<EarningsScreen>
               ),
 
               const Text(
-                "Total Earnings",
+                "Gesamteinnahmen",
                 style: TextStyle(
                   fontSize: 20,
                   color: Colors.grey,
@@ -93,7 +93,7 @@ class _EarningsScreenState extends State<EarningsScreen>
                     color: Colors.white,
                   ),
                   title: const Text(
-                    "Go Back",
+                    "Zurück",
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,

@@ -35,7 +35,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
           ),
         ),
         title: const Text(
-          "Shifted Parcels Screen",
+          "Versetzte Bestellungen",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -81,7 +81,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
                     {
                       return const Center(
                         child: Text(
-                          "No data exists.",
+                          "Es sind keine Daten vorhanden.",
                         ),
                       );
                     }
@@ -94,7 +94,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
           {
             return const Center(
               child: Text(
-                "No data exists.",
+                "Es sind keine Daten vorhanden.",
               ),
             );
           }

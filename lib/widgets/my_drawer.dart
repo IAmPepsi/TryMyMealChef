@@ -94,9 +94,9 @@ class _MyDrawerState extends State<MyDrawer>
 
                 //earnings
                 ListTile(
-                  leading: const Icon(Icons.monetization_on, color: Colors.grey,),
+                  leading: const Icon(Icons.euro_outlined, color: Colors.grey,),
                   title: const Text(
-                    "Earnings",
+                    "Verdienste",
                     style: TextStyle(color: Colors.grey),
                   ),
                   onTap: ()
@@ -114,7 +114,7 @@ class _MyDrawerState extends State<MyDrawer>
                 ListTile(
                   leading: const Icon(Icons.reorder, color: Colors.grey,),
                   title: const Text(
-                    "New Orders",
+                    "Neue Bestellungen",
                     style: TextStyle(color: Colors.grey),
                   ),
                   onTap: ()
@@ -130,9 +130,9 @@ class _MyDrawerState extends State<MyDrawer>
 
                 //Shifted Parcels
                 ListTile(
-                  leading: const Icon(Icons.picture_in_picture_alt_rounded, color: Colors.grey,),
+                  leading: const Icon(Icons.motorcycle, color: Colors.grey,),
                   title: const Text(
-                    "Shifted Parcels",
+                    "Gesendete Bestellungen",
                     style: TextStyle(color: Colors.grey),
                   ),
                   onTap: ()
@@ -150,7 +150,7 @@ class _MyDrawerState extends State<MyDrawer>
                 ListTile(
                   leading: const Icon(Icons.access_time, color: Colors.grey,),
                   title: const Text(
-                    "History",
+                    "Bestellverlauf",
                     style: TextStyle(color: Colors.grey),
                   ),
                   onTap: ()
@@ -168,7 +168,7 @@ class _MyDrawerState extends State<MyDrawer>
                 ListTile(
                   leading: const Icon(Icons.exit_to_app, color: Colors.grey,),
                   title: const Text(
-                    "Sign Out",
+                    "Abmelden",
                     style: TextStyle(color: Colors.grey),
                   ),
                   onTap: ()

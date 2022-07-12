@@ -33,7 +33,7 @@ class AddressDesign extends StatelessWidget
         const Padding(
           padding: EdgeInsets.all(10.0),
           child: Text(
-            'Shipping Details:',
+            'Versanddetails:',
             style: TextStyle(
                 color: Colors.grey,
                 fontWeight: FontWeight.bold
@@ -85,7 +85,7 @@ class AddressDesign extends StatelessWidget
                 children:
                 [
                   const Text(
-                    "Phone Number",
+                    "Telefonnummer",
                     style: TextStyle(color: Colors.grey),
                   ),
                   Text(
@@ -151,7 +151,7 @@ class AddressDesign extends StatelessWidget
                   {
                     //send notification to user - order shifted
 
-                    Fluttertoast.showToast(msg: "Confirmed Successfully.");
+                    Fluttertoast.showToast(msg: "Erfolgreich bestätigt.");
 
                     Navigator.push(context, MaterialPageRoute(builder: (context) => MySplashScreen()));
                   });
@@ -195,7 +195,7 @@ class AddressDesign extends StatelessWidget
                       : orderStatus == "shifted"
                       ? "Go Back"
                       : orderStatus == "normal"
-                      ? "Parcel Packed & \nShifted to Nearest PickUp Point. \nClick to Confirm"
+                      ? "Paketverpackt und \nzum nächsten Abholpunkt verschoben. \nZum Bestätigen klicken"
                       : "",
                   textAlign: TextAlign.center,
                   style: const TextStyle(

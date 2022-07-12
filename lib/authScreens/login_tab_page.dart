@@ -32,7 +32,7 @@ class _LoginTabPageState extends State<LoginTabPage>
     }
     else
     {
-      Fluttertoast.showToast(msg: "Please provide email and password.");
+      Fluttertoast.showToast(msg: "Bitte E-Mail und Passwort angeben.");
     }
   }
 
@@ -43,7 +43,7 @@ class _LoginTabPageState extends State<LoginTabPage>
         builder: (c)
         {
           return LoadingDialogWidget(
-            message: "Checking credentials",
+            message: "Überprüfung der Anmeldeinformationen",
           );
         }
     );
@@ -59,7 +59,7 @@ class _LoginTabPageState extends State<LoginTabPage>
     }).catchError((errorMessage)
     {
       Navigator.pop(context);
-      Fluttertoast.showToast(msg: "Error Occurred: \n $errorMessage");
+      Fluttertoast.showToast(msg: "Ein Fehler ist aufgetreten: \n $errorMessage");
     });
 
     if(currentUser != null)
@@ -93,14 +93,14 @@ class _LoginTabPageState extends State<LoginTabPage>
             {
           FirebaseAuth.instance.signOut();
           Navigator.pop(context);
-          Fluttertoast.showToast(msg: "you have BLOCKED by admin.\ncontact Admin: admin@ishop.com");
+          Fluttertoast.showToast(msg: "Sie wurden vom Administrator GESPERRT.\nWenden Sie sich an den Administrator: admin@trymymeal.com");
         }
       }
       else //record not exists
           {
         FirebaseAuth.instance.signOut();
         Navigator.pop(context);
-        Fluttertoast.showToast(msg: "This chef's record do not exists.");
+        Fluttertoast.showToast(msg: "Die Aufzeichnungen dieses Kochs existieren nicht.");
       }
     });
   }
@@ -161,7 +161,7 @@ class _LoginTabPageState extends State<LoginTabPage>
                 validateForm();
               },
               child: const Text(
-                "Login",
+                "Anmelden",
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,

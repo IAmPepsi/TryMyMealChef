@@ -51,7 +51,7 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
   {
     if(imgXFile == null) //image is not selected
         {
-      Fluttertoast.showToast(msg: "Please select an image.");
+      Fluttertoast.showToast(msg: "Bitte wählen Sie ein Bild aus.");
     }
     else //image is already selected
         {
@@ -71,7 +71,7 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
               builder: (c)
               {
                 return LoadingDialogWidget(
-                  message: "Registering your account",
+                  message: "Registrierung Ihres Kontos",
                 );
               }
           );
@@ -98,12 +98,12 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
         else
         {
           Navigator.pop(context);
-          Fluttertoast.showToast(msg: "Please complete the form. Do not leave any text field empty.");
+          Fluttertoast.showToast(msg: "Bitte füllen Sie das Formular aus. Lassen Sie kein Textfeld leer.");
         }
       }
       else //password is NOT equal to confirm password
           {
-        Fluttertoast.showToast(msg: "Password and Confirm Password do not match.");
+        Fluttertoast.showToast(msg: "Passwort und Passwort bestätigen stimmen nicht überein.");
       }
     }
   }
@@ -232,7 +232,7 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
                   CustomTextField(
                     textEditingController: confirmPasswordTextEditingController,
                     iconData: Icons.lock,
-                    hintText: "Confirm Password",
+                    hintText: "Passwort bestätigen",
                     isObsecre: true,
                     enabled: true,
                   ),
@@ -240,8 +240,8 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
                   //phone
                   CustomTextField(
                     textEditingController: phoneTextEditingController,
-                    iconData: Icons.lock,
-                    hintText: "Phone",
+                    iconData: Icons.add_call,
+                    hintText: "Telefonnummer",
                     isObsecre: false,
                     enabled: true,
                   ),
@@ -249,8 +249,8 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
                   //location
                   CustomTextField(
                     textEditingController: locationTextEditingController,
-                    iconData: Icons.lock,
-                    hintText: "Address",
+                    iconData: Icons.add_home_work_outlined,
+                    hintText: "Stadt",
                     isObsecre: false,
                     enabled: true,
                   ),
@@ -271,7 +271,7 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
                   formValidation();
                 },
                 child: const Text(
-                  "Sign Up",
+                  "Registrieren",
                   style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.bold,

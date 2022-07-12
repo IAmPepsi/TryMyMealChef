@@ -90,12 +90,12 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
       }
       else
       {
-        Fluttertoast.showToast(msg: "Please write meal info and meal title.");
+        Fluttertoast.showToast(msg: "Bitte geben Sie Meal Informationen und Titel ein.");
       }
     }
     else
     {
-      Fluttertoast.showToast(msg: "Please choose image.");
+      Fluttertoast.showToast(msg: "Bitte Bild auswählen.");
     }
   }
 
@@ -143,7 +143,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
           ),
         ),
         title: const Text(
-            "Upload New meal"
+            "Neue Meal hochladen"
         ),
         centerTitle: true,
       ),
@@ -184,7 +184,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
           //meal info
           ListTile(
             leading: const Icon(
-              Icons.perm_device_information,
+              Icons.fastfood,
               color: Colors.indigo,
             ),
             title: SizedBox(
@@ -192,7 +192,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
               child: TextField(
                 controller: mealInfoTextEditingController,
                 decoration: const InputDecoration(
-                  hintText: "meal info",
+                  hintText: "Meal info",
                   hintStyle: TextStyle(color: Colors.grey),
                   border: InputBorder.none,
                 ),
@@ -215,7 +215,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
               child: TextField(
                 controller: mealTitleTextEditingController,
                 decoration: const InputDecoration(
-                  hintText: "meal title",
+                  hintText: "Meal Name",
                   hintStyle: TextStyle(color: Colors.grey),
                   border: InputBorder.none,
                 ),
@@ -258,7 +258,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
           ),
         ),
         title: const Text(
-            "Add New Meal"
+            "Neue Meal hinzufügen"
         ),
         centerTitle: true,
       ),
@@ -299,7 +299,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
                     ),
                   ),
                   child: const Text(
-                    "Add New Meal",
+                    "Neue Meal hinzufügen",
                   )
               ),
 
@@ -331,7 +331,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
                   captureImagewithPhoneCamera();
                 },
                 child: const Text(
-                  "Capture image with Camera",
+                  "Bild mit Kamera aufnehmen",
                   style: TextStyle(
                     color: Colors.grey,
                   ),
@@ -343,7 +343,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
                   getImageFromGallery();
                 },
                 child: const Text(
-                  "Select image from Gallery",
+                  "Bild aus der Galerie auswählen",
                   style: TextStyle(
                     color: Colors.grey,
                   ),
@@ -355,7 +355,7 @@ class _UploadMealsScreenState extends State<UploadMealsScreen>
 
                 },
                 child: const Text(
-                  "Cancel",
+                  "Schließen",
                   style: TextStyle(
                     color: Colors.red,
                   ),

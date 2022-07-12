@@ -44,7 +44,7 @@ class _ItemsScreenState extends State<ItemsScreen>
           ),
         ),
         title: const Text(
-          "iShop",
+          "Try My Meal",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -71,7 +71,7 @@ class _ItemsScreenState extends State<ItemsScreen>
 
           SliverPersistentHeader(
             pinned: true,
-            delegate: TextDelegateHeaderWidget(title: "My " + widget.model!.mealTitle.toString() + "'s Items"),
+            delegate: TextDelegateHeaderWidget(title: "Meine " + widget.model!.mealTitle.toString() + " Artikels"),
           ),
 
           //1. query
@@ -114,7 +114,7 @@ class _ItemsScreenState extends State<ItemsScreen>
                 return const SliverToBoxAdapter(
                   child: Center(
                     child: Text(
-                      "No items exists",
+                      "Keine Artikels vorhanden",
                     ),
                   ),
                 );

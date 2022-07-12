@@ -29,7 +29,7 @@ class LoadingDialogWidget extends StatelessWidget
           const SizedBox(height: 16,),
 
           Text(
-            message.toString() + ", Please wait...",
+            message.toString() + ", Bitte warten Sie ...",
           ),
 
         ],

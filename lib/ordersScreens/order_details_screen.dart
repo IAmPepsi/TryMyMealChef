@@ -133,7 +133,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                       {
                         return const Center(
                           child: Text(
-                            "No data exists.",
+                            "Es sind keine Daten vorhanden.",
                           ),
                         );
                       }
@@ -147,7 +147,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
             {
               return const Center(
                 child: Text(
-                  "No data exists.",
+                  "Es sind keine Daten vorhanden.",
                 ),
               );
             }

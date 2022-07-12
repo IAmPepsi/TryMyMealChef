@@ -37,7 +37,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
           .doc(widget.model!.itemID)
           .delete();
 
-      Fluttertoast.showToast(msg: "Item Deleted Successfully.");
+      Fluttertoast.showToast(msg: "Artikel wurde erfolgreich gelöscht.");
       Navigator.push(context, MaterialPageRoute(builder: (c)=> MySplashScreen()));
     });
   }
@@ -72,7 +72,7 @@ class _ItemsDetailsScreenState extends State<ItemsDetailsScreen>
           deleteItem();
         },
         label: const Text(
-            "Delete this Item"
+            "Element Löschen"
         ),
         icon: const Icon(
           Icons.delete_sweep_outlined,

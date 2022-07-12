@@ -73,7 +73,7 @@ class _MySplashScreenState extends State<MySplashScreen>
               const SizedBox(height: 10,),
 
               const Text(
-                "iShop Chefs App",
+                "Try My Meal",
                 style: TextStyle(
                   fontSize: 30,
                   letterSpacing: 3,

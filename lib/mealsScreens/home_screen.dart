@@ -61,7 +61,7 @@ class _HomeScreenState extends State<HomeScreen>
           ),
         ),
         title: const Text(
-          "iShop",
+          "Try My Meal",
           style: TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.bold,
@@ -126,7 +126,7 @@ class _HomeScreenState extends State<HomeScreen>
                 return const SliverToBoxAdapter(
                   child: Center(
                     child: Text(
-                      "No meals exists",
+                      "Keine Meals vorhanden",
                     ),
                   ),
                 );

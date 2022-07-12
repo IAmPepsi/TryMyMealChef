@@ -123,12 +123,12 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
       }
       else
       {
-        Fluttertoast.showToast(msg: "Please fill complete form.");
+        Fluttertoast.showToast(msg: "Bitte füllen Sie das Formular vollständig aus.");
       }
     }
     else
     {
-      Fluttertoast.showToast(msg: "Please choose image.");
+      Fluttertoast.showToast(msg: "Bitte Bild auswählen.");
     }
   }
 
@@ -176,7 +176,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
           ),
         ),
         title: const Text(
-            "Upload New Item"
+            "Neuen Artikel hochladen"
         ),
         centerTitle: true,
       ),
@@ -217,7 +217,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
           //meal info
           ListTile(
             leading: const Icon(
-              Icons.perm_device_information,
+              Icons.fastfood,
               color: Colors.indigo,
             ),
             title: SizedBox(
@@ -225,7 +225,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
               child: TextField(
                 controller: itemInfoTextEditingController,
                 decoration: const InputDecoration(
-                  hintText: "item info",
+                  hintText: "Artikelinfo",
                   hintStyle: TextStyle(color: Colors.grey),
                   border: InputBorder.none,
                 ),
@@ -248,7 +248,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
               child: TextField(
                 controller: itemTitleTextEditingController,
                 decoration: const InputDecoration(
-                  hintText: "item title",
+                  hintText: "Artikel Name",
                   hintStyle: TextStyle(color: Colors.grey),
                   border: InputBorder.none,
                 ),
@@ -263,7 +263,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
           //item description
           ListTile(
             leading: const Icon(
-              Icons.description,
+              Icons.info,
               color: Colors.indigo,
             ),
             title: SizedBox(
@@ -271,7 +271,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
               child: TextField(
                 controller: itemDescriptionTextEditingController,
                 decoration: const InputDecoration(
-                  hintText: "item description",
+                  hintText: "Artikelbeschreibung",
                   hintStyle: TextStyle(color: Colors.grey),
                   border: InputBorder.none,
                 ),
@@ -286,7 +286,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
           //item price
           ListTile(
             leading: const Icon(
-              Icons.camera,
+              Icons.euro,
               color: Colors.indigo,
             ),
             title: SizedBox(
@@ -294,7 +294,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
               child: TextField(
                 controller: itemPriceTextEditingController,
                 decoration: const InputDecoration(
-                  hintText: "item price",
+                  hintText: "Artikelpreis",
                   hintStyle: TextStyle(color: Colors.grey),
                   border: InputBorder.none,
                 ),
@@ -337,7 +337,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
           ),
         ),
         title: const Text(
-            "Add New Item"
+            "Neues Artikel hinzufügen"
         ),
         centerTitle: true,
       ),
@@ -378,7 +378,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
                     ),
                   ),
                   child: const Text(
-                    "Add New Item",
+                    "Neues Artikel hinzufügen",
                   )
               ),
 
@@ -397,7 +397,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
         {
           return SimpleDialog(
             title: const Text(
-              "Meal Image",
+              "Meal Bild",
               style: TextStyle(
                 color: Colors.indigo,
                 fontWeight: FontWeight.bold,
@@ -410,7 +410,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
                   captureImagewithPhoneCamera();
                 },
                 child: const Text(
-                  "Capture image with Camera",
+                  "Bild mit Kamera aufnehmen",
                   style: TextStyle(
                     color: Colors.grey,
                   ),
@@ -422,7 +422,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
                   getImageFromGallery();
                 },
                 child: const Text(
-                  "Select image from Gallery",
+                  "Bild aus der Galerie auswählen",
                   style: TextStyle(
                     color: Colors.grey,
                   ),
@@ -434,7 +434,7 @@ class _UploadItemsScreenState extends State<UploadItemsScreen>
 
                 },
                 child: const Text(
-                  "Cancel",
+                  "Schließen",
                   style: TextStyle(
                     color: Colors.red,
                   ),
