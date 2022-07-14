@@ -43,7 +43,7 @@ class _EarningsScreenState extends State<EarningsScreen>
   Widget build(BuildContext context)
   {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: Column(
@@ -54,7 +54,7 @@ class _EarningsScreenState extends State<EarningsScreen>
                 "€ " + totalChefEarnings,
                 style: const TextStyle(
                   fontSize: 36,
-                  color: Colors.white,
+                  color: Colors.indigo,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -73,7 +73,7 @@ class _EarningsScreenState extends State<EarningsScreen>
                 height: 20,
                 width: 200,
                 child: Divider(
-                  color: Colors.white,
+                  color: Colors.indigo,
                   thickness: 1.5,
                 ),
               ),
@@ -90,12 +90,12 @@ class _EarningsScreenState extends State<EarningsScreen>
                   },
                   leading: const Icon(
                     Icons.arrow_back,
-                    color: Colors.white,
+                    color: Colors.indigo,
                   ),
                   title: const Text(
                     "Zurück",
                     style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.indigo,
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),

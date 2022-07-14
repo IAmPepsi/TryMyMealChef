@@ -24,8 +24,9 @@ class _MyDrawerState extends State<MyDrawer>
   Widget build(BuildContext context)
   {
     return Drawer(
-      backgroundColor: Colors.black54,
+      backgroundColor: Colors.white,
       child: ListView(
+        padding: EdgeInsets.zero,
         children: [
 
           //header
@@ -35,8 +36,8 @@ class _MyDrawerState extends State<MyDrawer>
               children: [
                 //user profile image
                 SizedBox(
-                  height: 130,
-                  width: 130,
+                  height: 140,
+                  width: 140,
                   child: CircleAvatar(
                     backgroundImage: NetworkImage(
                       sharedPreferences!.getString("photoUrl")!,
@@ -44,15 +45,19 @@ class _MyDrawerState extends State<MyDrawer>
                   ),
                 ),
 
-                const SizedBox(height: 12,),
+                const SizedBox(height: 14,),
 
                 //user name
                 Text(
                   sharedPreferences!.getString("name")!,
                   style: const TextStyle(
-                    color: Colors.grey,
+                    color: Colors.indigo,
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
+                    fontStyle: FontStyle.italic,
+                    letterSpacing: 2,
+                    decorationStyle: TextDecorationStyle.solid,
+                    wordSpacing: 2.0,
                   ),
                 ),
 
@@ -69,17 +74,23 @@ class _MyDrawerState extends State<MyDrawer>
               children: [
 
                 const Divider(
-                  height: 10,
-                  color: Colors.grey,
+                  height: 2,
+                  color: Colors.black,
                   thickness: 2,
                 ),
 
                 //home
                 ListTile(
-                  leading: const Icon(Icons.home, color: Colors.grey,),
+                  leading: const Icon(Icons.home, color: Colors.indigo,),
                   title: const Text(
                     "Home",
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(color: Colors.indigo,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                      letterSpacing: 2,
+                      decorationStyle: TextDecorationStyle.solid,
+                      wordSpacing: 5.0,),
                   ),
                   onTap: ()
                   {
@@ -87,17 +98,23 @@ class _MyDrawerState extends State<MyDrawer>
                   },
                 ),
                 const Divider(
-                  height: 10,
-                  color: Colors.grey,
+                  height: 2,
+                  color: Colors.black,
                   thickness: 2,
                 ),
 
                 //earnings
                 ListTile(
-                  leading: const Icon(Icons.euro_outlined, color: Colors.grey,),
+                  leading: const Icon(Icons.euro_outlined, color: Colors.indigo,),
                   title: const Text(
                     "Verdienste",
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(color: Colors.indigo,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                      letterSpacing: 2,
+                      decorationStyle: TextDecorationStyle.solid,
+                      wordSpacing: 5.0,),
                   ),
                   onTap: ()
                   {
@@ -105,17 +122,23 @@ class _MyDrawerState extends State<MyDrawer>
                   },
                 ),
                 const Divider(
-                  height: 10,
-                  color: Colors.grey,
+                  height: 2,
+                  color: Colors.black,
                   thickness: 2,
                 ),
 
                 //my orders
                 ListTile(
-                  leading: const Icon(Icons.reorder, color: Colors.grey,),
+                  leading: const Icon(Icons.reorder, color: Colors.indigo,),
                   title: const Text(
                     "Neue Bestellungen",
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(color: Colors.indigo,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                      letterSpacing: 2,
+                      decorationStyle: TextDecorationStyle.solid,
+                      wordSpacing: 5.0,),
                   ),
                   onTap: ()
                   {
@@ -123,17 +146,23 @@ class _MyDrawerState extends State<MyDrawer>
                   },
                 ),
                 const Divider(
-                  height: 10,
-                  color: Colors.grey,
+                  height: 2,
+                  color: Colors.black,
                   thickness: 2,
                 ),
 
                 //Shifted Parcels
                 ListTile(
-                  leading: const Icon(Icons.motorcycle, color: Colors.grey,),
+                  leading: const Icon(Icons.motorcycle, color: Colors.indigo,),
                   title: const Text(
                     "Gesendete Bestellungen",
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(color: Colors.indigo,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                      letterSpacing: 2,
+                      decorationStyle: TextDecorationStyle.solid,
+                      wordSpacing: 5.0,),
                   ),
                   onTap: ()
                   {
@@ -141,17 +170,23 @@ class _MyDrawerState extends State<MyDrawer>
                   },
                 ),
                 const Divider(
-                  height: 10,
-                  color: Colors.grey,
+                  height: 2,
+                  color: Colors.black,
                   thickness: 2,
                 ),
 
                 //history
                 ListTile(
-                  leading: const Icon(Icons.access_time, color: Colors.grey,),
+                  leading: const Icon(Icons.access_time, color: Colors.indigo,),
                   title: const Text(
                     "Bestellverlauf",
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(color: Colors.indigo,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                      letterSpacing: 2,
+                      decorationStyle: TextDecorationStyle.solid,
+                      wordSpacing: 5.0,),
                   ),
                   onTap: ()
                   {
@@ -159,17 +194,23 @@ class _MyDrawerState extends State<MyDrawer>
                   },
                 ),
                 const Divider(
-                  height: 10,
-                  color: Colors.grey,
+                  height: 2,
+                  color: Colors.black,
                   thickness: 2,
                 ),
 
                 //logout
                 ListTile(
-                  leading: const Icon(Icons.exit_to_app, color: Colors.grey,),
+                  leading: const Icon(Icons.exit_to_app, color: Colors.indigo,),
                   title: const Text(
                     "Abmelden",
-                    style: TextStyle(color: Colors.grey),
+                    style: TextStyle(color: Colors.indigo,
+                      fontSize: 18,
+                      fontWeight: FontWeight.bold,
+                      fontStyle: FontStyle.italic,
+                      letterSpacing: 2,
+                      decorationStyle: TextDecorationStyle.solid,
+                      wordSpacing: 5.0,),
                   ),
                   onTap: ()
                   {
@@ -178,15 +219,13 @@ class _MyDrawerState extends State<MyDrawer>
                   },
                 ),
                 const Divider(
-                  height: 10,
-                  color: Colors.grey,
+                  height: 2,
+                  color: Colors.black,
                   thickness: 2,
                 ),
-
               ],
             ),
           ),
-
         ],
       ),
     );

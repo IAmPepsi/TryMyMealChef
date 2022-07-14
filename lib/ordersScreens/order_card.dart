@@ -37,7 +37,7 @@ class _OrderCardState extends State<OrderCard>
         )));
       },
       child: Card(
-        color: Colors.black,
+        color: Colors.white60,
         elevation: 10,
         shadowColor: Colors.white54,
         child: Container(

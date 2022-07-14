@@ -47,7 +47,7 @@ class StatusBanner extends StatelessWidget
             },
             child: const Icon(
               Icons.arrow_back,
-              color: Colors.black,
+              color: Colors.white,
             ),
           ),
 
@@ -55,13 +55,20 @@ class StatusBanner extends StatelessWidget
 
           Text(
             orderStatus == "ended"
-                ? "Parcel Delivered $message"
+                ? "Bestellung geliefert $message"
                 : orderStatus == "shifted"
-                ? "Parcel Shifted $message"
+                ? "Bestellung verschoben $message"
                 : orderStatus == "normal"
-                ? "Order Placed $message"
+                ? "Bestellung aufgegeben $message"
                 : "",
-            style: const TextStyle(color: Colors.black, fontSize: 16),
+            style: const TextStyle(
+              color: Colors.white,
+              fontSize: 16,
+              fontWeight: FontWeight.bold,
+              fontStyle: FontStyle.italic,
+              letterSpacing: 2,
+              decorationStyle: TextDecorationStyle.solid,
+              wordSpacing: 2.0,),
           ),
 
           const SizedBox(width: 6,),

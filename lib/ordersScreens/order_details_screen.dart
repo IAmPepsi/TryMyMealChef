@@ -26,7 +26,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
   Widget build(BuildContext context)
   {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: FutureBuilder(
           future: FirebaseFirestore.instance
@@ -56,9 +56,13 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                       child: Text(
                         "€ " + orderDataMap["totalAmount"].toString(),
                         style: const TextStyle(
-                          color: Colors.grey,
+                          color: Colors.indigo,
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
+                          fontStyle: FontStyle.italic,
+                          letterSpacing: 2,
+                          decorationStyle: TextDecorationStyle.solid,
+                          wordSpacing: 2.0,
                         ),
                       ),
                     ),
@@ -99,7 +103,7 @@ class _OrderDetailsScreenState extends State<OrderDetailsScreen>
                   ),
 
                   orderStatus != "ended"
-                      ? Image.asset("images/packing.jpg")
+                      ? Image.asset("images/packing.png")
                       : Image.asset("images/delivered.jpg"),
 
                   const Divider(

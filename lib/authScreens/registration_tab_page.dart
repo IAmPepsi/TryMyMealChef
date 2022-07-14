@@ -186,7 +186,7 @@ class _RegistrationTabPageState extends State<RegistrationTabPage>
                 ),
                 child: imgXFile == null
                     ? Icon(
-                  Icons.add_photo_alternate,
+                  Icons.person_rounded,
                   color: Colors.grey,
                   size: MediaQuery.of(context).size.width * 0.20,
                 ) : null,
